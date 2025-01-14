@@ -99,44 +99,16 @@
       }
 
       .pricing-table h1 {
-        background: #dcb5fe;
-        color: #050505;
+        background: linear-gradient(135deg, #ff6347, #1e90ff);
+        color: #fff;
         margin: 0;
         padding: 20px;
         text-align: center;
         font-size: 24px;
       }
-
-      table {
-        width: 100%;
-        border-collapse: collapse;
+      .pricing-table div {
+        padding: 0px 5px !important;
       }
-
-      th,
-      td {
-        padding: 15px;
-        text-align: left;
-        border: 1px solid #6b6b6b;
-      }
-
-      th {
-        color: #000000;
-        text-transform: uppercase;
-      }
-
-      tr:nth-child(even) {
-        background: #f9f9f9;
-      }
-
-      td {
-        border-bottom: 1px solid #7d7d7d;
-      }
-
-      .price {
-        color: #28a745;
-        font-weight: bold;
-      }
-
       .video {
         width: 100%;
         max-width: 320px;
@@ -182,6 +154,20 @@
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/2.2.1/css/dataTables.bootstrap5.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/2.2.1/css/dataTables.dataTables.min.css"
+    />
+    <script src="https://cdn.datatables.net/2.2.1/js/dataTables.min.js"></script>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -199,8 +185,12 @@
       <p>Your go-to destination for amazing content!</p>
     </header>
     <div class="pricing-table">
-      <h1>Project Pricing</h1>
-      <table>
+      <h1>Project's Information</h1>
+      <table
+        id="projects-table"
+        class="table table-bordered table-striped"
+        style="width: 100%"
+      >
         <thead>
           <tr>
             <th>Project Name</th>
@@ -208,7 +198,7 @@
             <th>Project Code</th>
           </tr>
         </thead>
-        <tbody id="table-body"></tbody>
+        <tbody id="projects-table-body"></tbody>
       </table>
     </div>
     <section class="intro">

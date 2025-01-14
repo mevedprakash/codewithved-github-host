@@ -1,7 +1,8 @@
 $(document).ready(function () {
   $.getJSON("projects-info.json", function (data) {
     console.log(data);
-    data = data.sort((x,y)=>x.rank-y.rank);
+    data = data.sort((x, y) => x.rank - y.rank);
+    console.log(data);
     for (let index = 0; index < data.length; index++) {
       const element = data[index];
       let projectRow = `<tr>
@@ -16,13 +17,18 @@ $(document).ready(function () {
               ></iframe>
             </td>
             <td class="price">
-              <a href="${element.codeTopmateUrl}" target="_blank"
+              <a href="${
+                element.codeTopmateUrl ? element.codeTopmateUrl : "#"
+              }" ${element.codeTopmateUrl ? "target='_blank'" : ""}
                 >Download Code</a
               >
             </td>
           </tr>`;
-      $("#table-body").append(projectRow);
+      $("#projects-table-body").append(projectRow);
     }
+    var dt = new DataTable("#projects-table",{
+      ordering:false
+    });
   }).fail(function () {
     console.log("An error has occurred.");
   });
