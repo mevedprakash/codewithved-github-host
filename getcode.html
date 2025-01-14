@@ -86,6 +86,82 @@
       footer a:hover {
         text-decoration: underline;
       }
+
+      .pricing-table {
+        width: 80%;
+        max-width: 1200px;
+        margin: 20px auto;
+        background: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        color: rgb(26, 26, 26);
+      }
+
+      .pricing-table h1 {
+        background: #dcb5fe;
+        color: #050505;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+        font-size: 24px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 15px;
+        text-align: left;
+        border: 1px solid #6b6b6b;
+      }
+
+      th {
+        color: #000000;
+        text-transform: uppercase;
+      }
+
+      tr:nth-child(even) {
+        background: #f9f9f9;
+      }
+
+      td {
+        border-bottom: 1px solid #7d7d7d;
+      }
+
+      .price {
+        color: #28a745;
+        font-weight: bold;
+      }
+
+      .video {
+        width: 100%;
+        max-width: 320px;
+        height: 180px;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      @media (max-width: 600px) {
+        th,
+        td {
+          padding: 10px;
+          font-size: 14px;
+        }
+
+        .pricing-table h1 {
+          font-size: 20px;
+        }
+
+        .video {
+          width: 100%;
+          height: auto;
+        }
+      }
     </style>
   </head>
   <body>
@@ -95,17 +171,45 @@
     </header>
 
     <section class="intro">
-      <h2>How to Get Code</h2>
-      <p>
-        Follow me on Instagram and send message for which project you want the
-        code.
-      </p>
+      <h2>Any Query or doubts?</h2>
+      <p>Follow me on Instagram and send message for any query/doubts.</p>
+      <div class="subscribe">
+        <a href="https://www.instagram.com/codewithved_/" target="_blank"
+          >Contact On Insta</a
+        >
+      </div>
     </section>
-
-    <div class="subscribe">
-      <a href="https://www.instagram.com/codewithved_/" target="_blank"
-        >Contact On Insta</a
-      >
+    <br />
+    <div class="pricing-table">
+      <h1>Project Pricing</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Project Name</th>
+            <th>Video</th>
+            <th>Project Code</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Angular CRUD Operation with .NET 8 Web API, Entity Framework Core
+            </td>
+            <td>
+              <iframe
+                class="video"
+                src="https://www.youtube.com/embed/IJ2P9fodf7c"
+                allowfullscreen
+              ></iframe>
+            </td>
+            <td class="price">
+              <a href="https://topmate.io/vedtech/1395738" target="_blank"
+                >Get Code from here</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </body>
 </html>
