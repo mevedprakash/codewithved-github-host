@@ -18,8 +18,8 @@ $(document).ready(function () {
             </td>
             <td class="price">
               <a href="${
-                element.codeTopmateUrl ? element.codeTopmateUrl : "#"
-              }" ${element.codeTopmateUrl ? "target='_blank'" : ""}
+                element.downloadCodeUrl ? element.downloadCodeUrl : "#"
+              }" ${element.downloadCodeUrl ? "target='_blank'" : ""}
                 >Download Code</a
               >
             </td>
