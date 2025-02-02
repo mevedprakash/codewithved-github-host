@@ -13,6 +13,10 @@ export const routes: Routes = [
     component: ProjectsComponent,
   },
   {
+    path: 'getcodes',
+    component: ProjectsComponent,
+  },
+  {
     path: 'getcode/:id',
     component: ProjectComponent,
   },
