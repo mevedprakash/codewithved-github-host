@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "github-build": "ng build && cd dist/codewithved/browser && copy index.html getcode.html && copy index.html 404.html"
   },
   "private": true,
   "dependencies": {
