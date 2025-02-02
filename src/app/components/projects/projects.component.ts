@@ -1,11 +1,10 @@
 import { Component, inject } from '@angular/core';
 import { HttpService } from '../../services/http.service';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
-import { CardModule } from 'primeng/card';
-import { ButtonModule } from 'primeng/button';
+import { ProjectCardComponent } from '../project-card/project-card.component';
 @Component({
   selector: 'app-projects',
-  imports: [ButtonModule,CardModule],
+  imports: [ProjectCardComponent],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss',
 })
