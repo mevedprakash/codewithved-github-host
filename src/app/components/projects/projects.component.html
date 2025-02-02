@@ -1,6 +1,12 @@
 <div class="mt-4 mx-auto px-4" style="max-width: 1260px">
+  <div class="mb-4">
+    <mat-form-field class="w-full" subscriptSizing="dynamic">
+      <mat-label>Search</mat-label>
+      <input type="text" matInput [formControl]="searchControl"  />
+    </mat-form-field>
+  </div>
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-    @for (project of projects; track $index) {
+    @for (project of filteredProjects; track $index) {
     <div class="">
       <app-project-card [project]="project"></app-project-card>
     </div>
