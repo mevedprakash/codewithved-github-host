@@ -1,0 +1,50 @@
+<header>
+  <h1>Welcome to Code With Ved</h1>
+  <p>Your go-to destination for amazing content!</p>
+</header>
+<div class="pricing-table">
+  <h1>Project's Information</h1>
+  <table
+    id="projects-table"
+    class="table table-bordered table-striped"
+    style="width: 100%"
+  >
+    <thead>
+      <tr>
+        <th>Project Name</th>
+        <th>Video</th>
+        <th>Project Code</th>
+      </tr>
+    </thead>
+    <tbody id="projects-table-body">
+      @for (element of projects; track $index) {
+      <tr>
+        <td>
+          {{ element.name }}
+        </td>
+        <td>
+          <iframe
+            class="video"
+            [src]="sanitizer.bypassSecurityTrustResourceUrl(element.youtubeUrl)"
+            allowfullscreen
+          ></iframe>
+        </td>
+        <td class="price">
+          @if(true){
+          <a [href]="element.downloadCodeUrl" target="_blank">Download Code</a>
+          }
+        </td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>
+<section class="intro">
+  <h2>Any Query or doubts?</h2>
+  <p>Follow me on Instagram and send message for any query/doubts.</p>
+  <div class="subscribe">
+    <a href="https://www.instagram.com/codewithved_/" target="_blank"
+      >Contact On Insta</a
+    >
+  </div>
+</section>
