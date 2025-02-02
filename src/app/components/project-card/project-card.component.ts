@@ -2,6 +2,7 @@ import { Component, inject, Input } from '@angular/core';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import { DomSanitizer } from '@angular/platform-browser';
+import { Project } from '../../services/http.service';
 
 @Component({
   selector: 'app-project-card',
@@ -10,6 +11,6 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrl: './project-card.component.scss'
 })
 export class ProjectCardComponent {
-@Input() project:any;
+@Input() project!:Project;
  sanitizer= inject(DomSanitizer);
 }

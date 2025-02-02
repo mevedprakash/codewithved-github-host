@@ -1,44 +1,44 @@
 [
   {
     "name": "Dynamic Blog App Project using Angular & DotNet Core Api",
-    "youtubeUrl": "https://www.youtube.com/embed/z-pMiRc8unA",
+    "youtubeVideoId": "z-pMiRc8unA",
     "downloadCodeUrl": "https://topmate.io/codewithved/1395777?coupon_code=CODEWITHVED50",
     "rank": 3,
-    "code": "https://github.com/mevedprakash/blogsApp"
+    "gitCode": "https://github.com/mevedprakash/blogsApp"
   },
   {
     "name": "Angular CRUD Operation with .NET 8 Web API, Entity Framework Core | Project Tutorial in Hindi",
-    "youtubeUrl": "https://www.youtube.com/embed/IJ2P9fodf7c",
+    "youtubeVideoId": "IJ2P9fodf7c",
     "downloadCodeUrl": "https://topmate.io/codewithved/1395738?coupon_code=CODEWITHVED50",
     "rank": 1,
-    "code": "https://github.com/mevedprakash/crud-opreation-angular-dotnet"
+    "gitCode": "https://github.com/mevedprakash/crud-opreation-angular-dotnet"
   },
   {
     "name": "Complete MEAN Stack E-Commerce Project  Angular | NodeJS",
-    "youtubeUrl": "https://www.youtube.com/embed/1biOTNHgJqs",
+    "youtubeVideoId": "1biOTNHgJqs",
     "downloadCodeUrl": "https://topmate.io/codewithved/1395787?coupon_code=CODEWITHVED50",
     "rank": 2,
-    "code": "https://github.com/mevedprakash/e-comm-store"
+    "gitCode": "https://github.com/mevedprakash/e-comm-store"
   },
   {
     "name": "MEAN Stack CRUD Operations project tutorial | Angular | Nodejs | MongoDB",
-    "youtubeUrl": "https://www.youtube.com/embed/tNmzIXBMQvc",
+    "youtubeVideoId": "tNmzIXBMQvc",
     "downloadCodeUrl": "https://topmate.io/codewithved/1396137?coupon_code=CODEWITHVED50",
     "rank": 2,
-    "code": "https://github.com/mevedprakash/mean-crud"
+    "gitCode": "https://github.com/mevedprakash/mean-crud"
   },
   {
     "name": "Inventory Management Project in Angular | Tutorial step by step",
-    "youtubeUrl": "https://www.youtube.com/embed/U3bJDDZUeIQ?coupon_code=CODEWITHVED50",
-    "downloadCodeUrl": "https://topmate.io/codewithved/1406769",
+    "youtubeVideoId": "U3bJDDZUeIQ",
+    "downloadCodeUrl": "https://topmate.io/codewithved/1406769?coupon_code=CODEWITHVED50",
     "rank": 3,
-    "code": "https://github.com/mevedprakash/ng-inventory-management"
+    "gitCode": "https://github.com/mevedprakash/ng-inventory-management"
   },
   {
     "name": "Portfolio Website using Angular | Angular 19 Project Tutorial | in Hindi ",
-    "youtubeUrl": "https://www.youtube.com/embed/GJHjl2D9C2M?coupon_code=CODEWITHVED50",
-    "downloadCodeUrl": "https://topmate.io/codewithved/1409505",
+    "youtubeVideoId": "GJHjl2D9C2M",
+    "downloadCodeUrl": "https://topmate.io/codewithved/1409505?coupon_code=CODEWITHVED50",
     "rank": 3,
-    "code": "https://github.com/mevedprakash/my-portfolio"
+    "gitCode": "https://github.com/mevedprakash/my-portfolio"
   }
 ]
