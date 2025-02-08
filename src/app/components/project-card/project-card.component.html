@@ -1,6 +1,11 @@
-<mat-card class="pb-1" appearance="outlined">
-  <div mat-card-image>
-    <!-- <iframe
+<mat-card class="pb-1">
+  <div
+    mat-card-image
+    class="cursor-pointer"
+    [routerLink]="'/project/' + project.id!"
+  >
+    @if(showYoutubeVideo){
+    <iframe
       class="w-full h-52"
       [src]="
         sanitizer.bypassSecurityTrustResourceUrl(
@@ -8,7 +13,8 @@
         )
       "
       allowfullscreen
-    ></iframe> -->
+    ></iframe>
+    } @else{
     <img
       class="w-full"
       [src]="
@@ -17,16 +23,28 @@
         '/mqdefault.webp'
       "
     />
+    }
   </div>
-  <mat-card-content>
-    <h4>{{ project.name }}</h4>
+  <mat-card-content
+    [routerLink]="'/project/' + project.id!"
+    class="cursor-pointer"
+  >
+    <h4 class="font-lg text-black">{{ project.name }}</h4>
   </mat-card-content>
-  <mat-card-actions class="flex justify-center">
+  @if(showAction){
+  <mat-card-actions class="flex justify-center gap-4">
     <a
       class="px-4 py-2 bg-blue-600 text-white rounded shadow-sm"
       [href]="project.downloadCodeUrl"
       target="_blank"
       >Download Code</a
     >
+    <a
+      class="px-4 py-2 bg-red-600 text-white rounded shadow-sm"
+      [href]="'https://youtu.be/' + project.youtubeVideoId"
+      target="_blank"
+      >Watch Video</a
+    >
   </mat-card-actions>
+  }
 </mat-card>

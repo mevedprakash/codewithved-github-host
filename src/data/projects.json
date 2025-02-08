@@ -1,5 +1,6 @@
 [
   {
+    "id":"aa001",
     "name": "Dynamic Blog App Project using Angular & DotNet Core Api",
     "youtubeVideoId": "z-pMiRc8unA",
     "downloadCodeUrl": "https://topmate.io/codewithved/1395777?coupon_code=CODEWITHVED50",
@@ -7,6 +8,7 @@
     "gitCode": "https://github.com/mevedprakash/blogsApp"
   },
   {
+    "id":"aa002",
     "name": "Angular CRUD Operation with .NET 8 Web API, Entity Framework Core | Project Tutorial in Hindi",
     "youtubeVideoId": "IJ2P9fodf7c",
     "downloadCodeUrl": "https://topmate.io/codewithved/1395738?coupon_code=CODEWITHVED50",
@@ -14,6 +16,7 @@
     "gitCode": "https://github.com/mevedprakash/crud-opreation-angular-dotnet"
   },
   {
+    "id":"aa003",
     "name": "Complete MEAN Stack E-Commerce Project  Angular | NodeJS",
     "youtubeVideoId": "1biOTNHgJqs",
     "downloadCodeUrl": "https://topmate.io/codewithved/1395787?coupon_code=CODEWITHVED50",
@@ -21,6 +24,7 @@
     "gitCode": "https://github.com/mevedprakash/e-comm-store"
   },
   {
+    "id":"aa004",
     "name": "MEAN Stack CRUD Operations project tutorial | Angular | Nodejs | MongoDB",
     "youtubeVideoId": "tNmzIXBMQvc",
     "downloadCodeUrl": "https://topmate.io/codewithved/1396137?coupon_code=CODEWITHVED50",
@@ -28,6 +32,7 @@
     "gitCode": "https://github.com/mevedprakash/mean-crud"
   },
   {
+    "id":"aa005",
     "name": "Inventory Management Project in Angular | Tutorial step by step",
     "youtubeVideoId": "U3bJDDZUeIQ",
     "downloadCodeUrl": "https://topmate.io/codewithved/1406769?coupon_code=CODEWITHVED50",
@@ -35,10 +40,18 @@
     "gitCode": "https://github.com/mevedprakash/ng-inventory-management"
   },
   {
+    "id":"aa006",
     "name": "Portfolio Website using Angular | Angular 19 Project Tutorial | in Hindi ",
     "youtubeVideoId": "GJHjl2D9C2M",
     "downloadCodeUrl": "https://topmate.io/codewithved/1409505?coupon_code=CODEWITHVED50",
     "rank": 3,
     "gitCode": "https://github.com/mevedprakash/my-portfolio"
+  },{
+    "id":"aa007",
+    "name": "Create Admin Dashboard and Responsive Sidebar using Angular",
+    "youtubeVideoId": "rjQ7D-9OhMM",
+    "downloadCodeUrl": "https://topmate.io/codewithved/1429295?coupon_code=CODEWITHVED50",
+    "rank": 3,
+    "gitCode":"https://github.com/mevedprakash/admin-dashboard"
   }
 ]
