@@ -1,7 +1,10 @@
-<mat-toolbar color="primary">
-  <button mat-icon-button routerLink="/">
+<mat-toolbar color="primary" class="bg-blue-600! text-white! pr-16!">
+  <button mat-icon-button routerLink="/" class="text-white!">
     <mat-icon>menu</mat-icon>
   </button>
+
   <h4 routerLink="/" class="cursor-pointer">Code With Ved</h4>
+  <span class="flex-1"></span>
+  <a routerLink="/projects">Projects</a>
 </mat-toolbar>
 <router-outlet />

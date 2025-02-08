@@ -1,1 +1,17 @@
-<p>project works!</p>
+<div class="mt-4 mx-auto px-4" style="max-width: 1260px">
+  <div class="grid grid-cols-1 md:grid-cols-4 md:gap-8">
+    <div class="col-span-3 mb-4">
+      <app-project-card [project]="project!"></app-project-card>
+    </div>
+    <div>
+      <div class="flex justify-center">
+        <h1 class="text-xl font-semibold mb-2">Projects that you may like</h1>
+      </div>
+      @for (project of similarProjects; track $index) {
+      <div class="mb-4">
+        <app-project-card [project]="project" [showAction]="false"></app-project-card>
+      </div>
+      }
+    </div>
+  </div>
+</div>

@@ -9,15 +9,15 @@ export const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path: 'getcode',
+    path: 'getcode', // shared on youtube
     component: ProjectsComponent,
   },
   {
-    path: 'getcodes',
+    path: 'projects',
     component: ProjectsComponent,
   },
   {
-    path: 'getcode/:id',
+    path: 'project/:id',
     component: ProjectComponent,
   },
 ];

@@ -2,38 +2,48 @@
   <h1>Welcome to Code With Ved</h1>
   <p>Your go-to destination for amazing content!</p>
 </header>
-<section class="intro">
-  <h2>About Me</h2>
-  <p>
-    Hello! I'm passionate about creating engaging and informative videos that
-    inspire, educate, and entertain. On my channel, you will find a mix of
-    tutorials, vlogs, and creative projects aimed to keep you hooked.
-  </p>
-  <div class="subscribe">
-  <a
-    href="https://www.youtube.com/@codewithved?sub_confirmation=1"
-    target="_blank"
-    >Subscribe Now</a
-  >
+
+<div class="mx-auto w-6/12">
+  <mat-card class="cta-card">
+    <h2 class="font-bold text-lg">About Me</h2>
+    <p class="text-lg mb-4">
+      Hello! I'm passionate about creating engaging and informative videos that
+      inspire, educate, and entertain. On my channel, you will find a mix of
+      tutorials, vlogs, and creative projects aimed to keep you hooked.
+    </p>
+    <div class="flex justify-center">
+      <a
+        class="cta-button"
+        href="https://www.youtube.com/@codewithved?sub_confirmation=1"
+        target="_blank"
+        >Subscribe Now</a
+      >
+    </div>
+  </mat-card>
+
+  <mat-card class="cta-card">
+    <h2 class="font-bold text-lg">Any Query or doubts?</h2>
+    <p class="text-lg mb-4">
+      Follow me on Instagram and send message for any query/doubts.
+    </p>
+    <div class="flex justify-center">
+      <a
+        class="cta-button"
+        href="https://www.instagram.com/codewithved_/"
+        target="_blank"
+        >Contact On Insta</a
+      >
+    </div>
+  </mat-card>
+
+  <mat-card class="cta-card">
+    <h2 class="font-bold text-lg">Do you want Project's Code?</h2>
+    <p class="text-lg mb-4">
+      All of the project's code that is shown in my videos are aviable to
+      download
+    </p>
+    <div class="flex justify-center">
+      <a [routerLink]="'/projects'" class="cta-button">Get from Here</a>
+    </div>
+  </mat-card>
 </div>
-</section>
-
-<section class="intro">
-  <h2>Any Query or doubts?</h2>
-  <p>Follow me on Instagram and send message for any query/doubts.</p>
-  <div class="subscribe">
-    <a href="https://www.instagram.com/codewithved_/" target="_blank"
-      >Contact On Insta</a
-    >
-  </div>
-</section>
-
-<section class="intro">
-  <h2>Do you want Project's Code?</h2>
-  <p>
-    All of the project's code that is shown in my videos are aviable to download
-  </p>
-  <div class="subscribe">
-    <a [routerLink]="'/getcode'">Get from Here</a>
-  </div>
-</section>
