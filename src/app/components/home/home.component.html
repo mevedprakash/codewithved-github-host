@@ -1,49 +1,116 @@
-<header>
-  <h1>Welcome to Code With Ved</h1>
-  <p>Your go-to destination for amazing content!</p>
-</header>
+<!-- Hero Section -->
+<section class="pb-24 pt-16 bg-gradient-to-r from-indigo-600 to-purple-600">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 text-white mb-12 md:mb-0">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">
+          Fullstack Developer & Tech Educator
+        </h1>
+        <p class="text-xl mb-8">
+          Transforming ideas into digital reality while empowering developers
+          worldwide.
+        </p>
+        <div class="flex space-x-4">
+          <a
+            [routerLink]="'/projects'"
+            class="bg-white text-indigo-600 px-8 py-3 rounded-full hover:bg-gray-100 transition shadow-lg"
+          >
+            Watch Tutorials
+          </a>
+          <a
+            target="_blank"
+            href="https://www.instagram.com/codewithved_/"
+            class="border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-indigo-600 transition"
+          >
+            Contact Me
+          </a>
+        </div>
+      </div>
+      <div class="md:w-1/2 flex justify-center">
+        <div class="bg-white rounded-2xl p-4 shadow-2xl w-80">
+          <img
+            src="/p4.png"
+            class="rounded-xl"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<div class="mx-auto w-6/12">
-  <mat-card class="cta-card">
-    <h2 class="font-bold text-lg">About Me</h2>
-    <p class="text-lg mb-4">
-      Hello! I'm passionate about creating engaging and informative videos that
-      inspire, educate, and entertain. On my channel, you will find a mix of
-      tutorials, vlogs, and creative projects aimed to keep you hooked.
-    </p>
-    <div class="flex justify-center">
-      <a
-        class="cta-button"
-        href="https://www.youtube.com/@codewithved?sub_confirmation=1"
-        target="_blank"
-        >Subscribe Now</a
+<!-- Tech Stack Section -->
+<section class="py-20 bg-white" id="techstack">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12">Tech Stack</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+      <div
+        class="flex flex-col items-center p-6 bg-gray-50 rounded-xl hover:shadow-md transition"
       >
-    </div>
-  </mat-card>
-
-  <mat-card class="cta-card">
-    <h2 class="font-bold text-lg">Any Query or doubts?</h2>
-    <p class="text-lg mb-4">
-      Follow me on Instagram and send message for any query/doubts.
-    </p>
-    <div class="flex justify-center">
-      <a
-        class="cta-button"
-        href="https://www.instagram.com/codewithved_/"
-        target="_blank"
-        >Contact On Insta</a
+        <i class="fab fa-js text-4xl text-yellow-400 mb-4"></i>
+        <span class="font-medium">JavaScript</span>
+      </div>
+      <div
+        class="flex flex-col items-center p-6 bg-gray-50 rounded-xl hover:shadow-md transition"
       >
+        <i class="fab fa-angular text-4xl text-red-600 mb-4"></i>
+        <span class="font-medium">Angular</span>
+      </div>
+      <div
+        class="flex flex-col items-center p-6 bg-gray-50 rounded-xl hover:shadow-md transition"
+      >
+        <i class="fab fa-node text-4xl text-green-600 mb-4"></i>
+        <span class="font-medium">Node.js</span>
+      </div>
+      <div
+        class="flex flex-col items-center p-6 bg-gray-50 rounded-xl hover:shadow-md transition"
+      >
+        <i class="fab fa-microsoft text-4xl text-blue-800 mb-4"></i>
+        <span class="font-medium">.NET</span>
+      </div>
+      <div
+        class="flex flex-col items-center p-6 bg-gray-50 rounded-xl hover:shadow-md transition"
+      >
+        <i class="fas fa-database text-4xl text-blue-600 mb-4"></i>
+        <span class="font-medium">MongoDB</span>
+      </div>
+      <div
+        class="flex flex-col items-center p-6 bg-gray-50 rounded-xl hover:shadow-md transition"
+      >
+        <i class="fas fa-server text-4xl text-gray-600 mb-4"></i>
+        <span class="font-medium">SQL Server</span>
+      </div>
     </div>
-  </mat-card>
+  </div>
+</section>
 
-  <mat-card class="cta-card">
-    <h2 class="font-bold text-lg">Do you want Project's Code?</h2>
-    <p class="text-lg mb-4">
-      All of the project's code that is shown in my videos are aviable to
-      download
-    </p>
-    <div class="flex justify-center">
-      <a [routerLink]="'/projects'" class="cta-button">Get from Here</a>
+<!-- Teaching Section -->
+<section class="py-20 bg-gray-100">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 mb-12 md:mb-0">
+        <img
+          src="https://img.youtube.com/vi/1biOTNHgJqs/maxresdefault.jpg"
+          alt="YouTube Channel"
+          class="rounded-xl shadow-xl"
+        />
+      </div>
+      <div class="md:w-1/2 md:pl-16">
+        <h2 class="text-3xl font-bold mb-6">Free Coding Tutorials</h2>
+        <p class="text-gray-600 mb-8">
+          Join me on YouTube where I break down complex programming concepts
+          into digestible tutorials. Learn fullstack development, best
+          practices, and modern techniques.
+        </p>
+        <a
+          target="_blank"
+          href="https://www.youtube.com/@codewithved?sub_confirmation=1"
+          class="bg-red-600 text-white px-8 py-3 rounded-full hover:bg-red-700 transition flex items-center w-fit"
+        >
+          <i class="fab fa-youtube mr-2"></i> Visit Channel
+        </a>
+      </div>
     </div>
-  </mat-card>
-</div>
+  </div>
+</section>
+
+

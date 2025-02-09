@@ -1,10 +1,71 @@
-<mat-toolbar color="primary" class="bg-blue-600! text-white! pr-16!">
-  <button mat-icon-button routerLink="/" class="text-white!">
-    <mat-icon>menu</mat-icon>
-  </button>
+<!-- Navigation -->
+<nav class="bg-white shadow-lg fixed w-full z-50" style="top: 0;">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex justify-between items-center h-16">
+      <div class="flex items-center">
+        <a routerLink="/" class="text-2xl font-bold text-indigo-600">CodeWithVed</a>
+        <div class="hidden md:flex space-x-8 ml-10">
+          <a routerLink="/" class="text-gray-700 hover:text-indigo-600 transition"
+            >Home</a
+          >
+          <a href="#techstack" class="text-gray-700 hover:text-indigo-600 transition"
+            >Tech Stack</a
+          >
+          <a
+            [routerLink]="'/projects'"
+            class="text-gray-700 hover:text-indigo-600 transition"
+            >Tutorials</a
+          >
+          <a
+            [routerLink]="'/projects'"
+            class="text-gray-700 hover:text-indigo-600 transition"
+            >Projects</a
+          >
+          <a target="_blank"
+          href="https://www.instagram.com/codewithved_/" class="text-gray-700 hover:text-indigo-600 transition"
+            >Contact</a
+          >
+        </div>
+      </div>
+      <a
+        target="_blank"
+        href="https://www.youtube.com/@codewithved?sub_confirmation=1"
+        class="hidden md:flex bg-indigo-600 text-white px-6 py-2 rounded-full hover:bg-indigo-700 transition"
+      >
+        Subscribe
+      </a>
+      <a
+        [routerLink]="'/projects'"
+        class="flex md:hidden bg-indigo-600 text-white px-6 py-2 rounded-full hover:bg-indigo-700 transition"
+      >
+        Projects
+      </a>
+    </div>
+  </div>
+</nav>
 
-  <h4 routerLink="/" class="cursor-pointer">Code With Ved</h4>
-  <span class="flex-1"></span>
-  <a routerLink="/projects">Projects</a>
-</mat-toolbar>
-<router-outlet />
+<main class="mt-16" >
+  <router-outlet />
+</main>
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-12">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="text-center mb-8">
+      <h3 class="text-2xl font-bold mb-4">Let's Connect</h3>
+      <div class="flex justify-center space-x-6">      
+        <a target="_blank" href="https://www.instagram.com/codewithved_/" class="hover:text-indigo-400 transition">
+          <i class="fab fa-youtube text-2xl"></i>
+        </a>
+        <a target="_blank" href="https://www.instagram.com/codewithved_/" class="hover:text-indigo-400 transition">
+          <i class="fab fa-instagram text-2xl"></i>
+        </a>
+        <a target="_blank" href="https://x.com/codewithved_" class="hover:text-indigo-400 transition">
+          <i class="fab fa-twitter text-2xl"></i>
+        </a>
+      </div>
+    </div>
+    <div class="text-center text-gray-400 pt-8 border-t border-gray-700">
+      <p>&copy; 2025 All rights reserved.</p>
+    </div>
+  </div>
+</footer>
