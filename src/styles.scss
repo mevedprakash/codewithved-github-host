@@ -4,3 +4,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-
 *{
     box-sizing: border-box;
 }
+
+.space-x-css > *:not(:last-child) {
+    margin-right: 1.5rem;
+  }
