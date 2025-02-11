@@ -30,7 +30,7 @@ export class ProjectsComponent {
   router = inject(Router);
   searchControl = new FormControl('');
   filteredProjects: Project[] = [];
-  
+
   ngOnInit() {
     this.route.queryParamMap.subscribe((result: any) => {
       let id = result.params.id;
@@ -46,8 +46,12 @@ export class ProjectsComponent {
       .pipe(debounceTime(250))
       .subscribe((search: string | null) => {
         console.log(search);
-        this.filteredProjects = this.projects.filter((x) =>
-          x.name.toLowerCase().includes((search || '').toLowerCase())
+        this.filteredProjects = this.projects.filter(
+          (x) =>
+            x.name.toLowerCase().includes((search || '').toLowerCase()) ||
+            x.techStack?.find((y) =>
+              y.toLowerCase().includes((search || '').toLowerCase())
+            )
         );
       });
   }

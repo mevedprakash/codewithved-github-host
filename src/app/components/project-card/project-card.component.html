@@ -30,12 +30,17 @@
     class="cursor-pointer"
   >
     <h4 class="font-lg text-black">{{ project.name }}</h4>
+    <div class="flex gap-1 flex-wrap my-1">
+      @for (item of project.techStack; track $index) {
+        <span class="bg-gray-600 text-white text-xs  px-2 py-1 shadow rounded-lg">{{item}}</span>
+      }
+    </div>
   </mat-card-content>
   @if(showAction){
   <mat-card-actions class="flex justify-center gap-4">
     <a
       class="px-4 py-2 bg-blue-600 text-white rounded shadow-sm"
-      [href]="project.downloadCodeUrl"
+      [href]="project.downloadCodeUrl || project.gitCodeUrl"
       target="_blank"
       >Download Code</a
     >

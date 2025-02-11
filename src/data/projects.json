@@ -1,57 +1,92 @@
 [
   {
-    "id":"aa001",
+    "id": "aa001",
     "name": "Dynamic Blog App Project using Angular & DotNet Core Api",
     "youtubeVideoId": "z-pMiRc8unA",
     "downloadCodeUrl": "https://topmate.io/codewithved/1395777?coupon_code=CODEWITHVED50",
     "rank": 3,
-    "gitCode": "https://github.com/mevedprakash/blogsApp"
+    "gitCodeUrl": "https://github.com/mevedprakash/blogsApp",
+    "techStack": ["Angular", ".NET", "SQL Server"]
   },
   {
-    "id":"aa002",
+    "id": "aa002",
     "name": "Angular CRUD Operation with .NET 8 Web API, Entity Framework Core | Project Tutorial in Hindi",
     "youtubeVideoId": "IJ2P9fodf7c",
     "downloadCodeUrl": "https://topmate.io/codewithved/1395738?coupon_code=CODEWITHVED50",
     "rank": 1,
-    "gitCode": "https://github.com/mevedprakash/crud-opreation-angular-dotnet"
+    "gitCodeUrl": "https://github.com/mevedprakash/crud-opreation-angular-dotnet",
+    "techStack": ["Angular", ".NET", "SQL Server"]
   },
   {
-    "id":"aa003",
+    "id": "aa003",
     "name": "Complete MEAN Stack E-Commerce Project  Angular | NodeJS",
     "youtubeVideoId": "1biOTNHgJqs",
     "downloadCodeUrl": "https://topmate.io/codewithved/1395787?coupon_code=CODEWITHVED50",
     "rank": 2,
-    "gitCode": "https://github.com/mevedprakash/e-comm-store"
+    "gitCodeUrl": "https://github.com/mevedprakash/my-ecomm-meanstack",
+    "techStack": ["Angular", "NodeJS", "MongoDB"]
   },
   {
-    "id":"aa004",
+    "id": "aa004",
     "name": "MEAN Stack CRUD Operations project tutorial | Angular | Nodejs | MongoDB",
     "youtubeVideoId": "tNmzIXBMQvc",
     "downloadCodeUrl": "https://topmate.io/codewithved/1396137?coupon_code=CODEWITHVED50",
     "rank": 2,
-    "gitCode": "https://github.com/mevedprakash/mean-crud"
+    "gitCodeUrl": "https://github.com/mevedprakash/mean-crud",
+    "techStack": ["Angular", "NodeJS", "MongoDB"]
   },
   {
-    "id":"aa005",
+    "id": "aa005",
     "name": "Inventory Management Project in Angular | Tutorial step by step",
     "youtubeVideoId": "U3bJDDZUeIQ",
     "downloadCodeUrl": "https://topmate.io/codewithved/1406769?coupon_code=CODEWITHVED50",
     "rank": 3,
-    "gitCode": "https://github.com/mevedprakash/ng-inventory-management"
+    "gitCodeUrl": "https://github.com/mevedprakash/ng-inventory-management",
+    "techStack": ["Angular", "JSON Server"]
   },
   {
-    "id":"aa006",
+    "id": "aa006",
     "name": "Portfolio Website using Angular | Angular 19 Project Tutorial | in Hindi ",
     "youtubeVideoId": "GJHjl2D9C2M",
     "downloadCodeUrl": "https://topmate.io/codewithved/1409505?coupon_code=CODEWITHVED50",
     "rank": 3,
-    "gitCode": "https://github.com/mevedprakash/my-portfolio"
-  },{
-    "id":"aa007",
+    "gitCodeUrl": "https://github.com/mevedprakash/my-portfolio",
+    "techStack": ["Angular", "JSON Server"]
+  },
+  {
+    "id": "aa007",
     "name": "Create Admin Dashboard and Responsive Sidebar using Angular",
     "youtubeVideoId": "rjQ7D-9OhMM",
     "downloadCodeUrl": "https://topmate.io/codewithved/1429295?coupon_code=CODEWITHVED50",
     "rank": 3,
-    "gitCode":"https://github.com/mevedprakash/admin-dashboard"
+    "gitCodeUrl": "https://github.com/mevedprakash/admin-dashboard",
+    "techStack": ["Angular", "Angular Material"]
+  },
+  {
+    "id": "aa008",
+    "name": "Create Angular Image Slider from Scratch",
+    "youtubeVideoId": "Mt6Bs85iIH4",
+    "downloadCodeUrl": "",
+    "rank": 3,
+    "gitCodeUrl": "https://github.com/mevedprakash/image-slider",
+    "techStack": ["Angular", "TailwindCSS"]
+  },
+  {
+    "id": "aa009",
+    "name": "Angular Project from scratch : Quiz App",
+    "youtubeVideoId": "xlxkfYtx3D4",
+    "downloadCodeUrl": "",
+    "rank": 3,
+    "gitCodeUrl": "https://github.com/mevedprakash/quiz-app",
+    "techStack": ["Angular", "JSON Server"]
+  },
+  {
+    "id": "aa010",
+    "name": "Netflix clone using Angular | Netflix app project in Angular",
+    "youtubeVideoId": "OqBQ2F-SXRU",
+    "downloadCodeUrl": "",
+    "rank": 3,
+    "gitCodeUrl": "https://github.com/mevedprakash/netflix-clone-ng",
+    "techStack": ["Angular", "JSON Server"]
   }
 ]
