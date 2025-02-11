@@ -8,7 +8,8 @@ export interface Project {
   youtubeVideoId: string;
   downloadCodeUrl: string;
   rank: number;
-  gitCode: string;
+  gitCodeUrl: string;
+  techStack?: string[];
 }
 @Injectable({
   providedIn: 'root',
@@ -16,20 +17,18 @@ export interface Project {
 export class HttpService {
   projects!: Project[];
   constructor() {
-
     var idArr = projectsData.map(function (item) {
       return item.id;
     });
     var isDuplicate = idArr.some(function (item, idx) {
       return idArr.indexOf(item) != idx;
     });
-    if(isDuplicate){
-      this.projects=[];
-      console.error("Duplicate project id")
+    if (isDuplicate) {
+      this.projects = [];
+      console.error('Duplicate project id');
       return;
     }
     this.projects = projectsData;
-    
   }
 
   getProjects() {
