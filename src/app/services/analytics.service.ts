@@ -5,10 +5,9 @@ declare var gtag: any;
 })
 export class AnalyticsService {
   constructor() {}
-  trackEvent(eventName: string, eventLabel: string) {
+  trackEvent(eventName: string, value: string) {
     gtag('event', eventName, {
-      // the label that will show up in the dashboard as the events name
-      event_label: eventLabel,
+      value: value,
     });
   }
 }
