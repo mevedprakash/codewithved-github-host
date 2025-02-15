@@ -42,12 +42,14 @@
       class="px-4 py-2 bg-blue-600 text-white rounded shadow-sm"
       [href]="project.downloadCodeUrl || project.gitCodeUrl"
       target="_blank"
+      (click)="onDownload()"
       >Download Code</a
     >
     <a
       class="px-4 py-2 bg-red-600 text-white rounded shadow-sm"
       [href]="'https://youtu.be/' + project.youtubeVideoId"
       target="_blank"
+      (click)="onWatch()"
       >Watch Video</a
     >
   </mat-card-actions>

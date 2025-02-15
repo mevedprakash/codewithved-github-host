@@ -1,10 +1,19 @@
 @import "tailwindcss";
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: rgb(234, 234, 234); }
-*{
-    box-sizing: border-box;
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Poppins", serif;
+  font-weight: normal;
+  font-style: normal;
+  background-color: rgb(234, 234, 234);
+}
+* {
+  box-sizing: border-box;
 }
 
 .space-x-css > *:not(:last-child) {
-    margin-right: 1.5rem;
-  }
+  margin-right: 1.5rem;
+}

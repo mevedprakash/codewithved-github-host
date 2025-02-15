@@ -9,6 +9,7 @@ import { debounceTime, map } from 'rxjs/operators';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { MatSelectModule } from '@angular/material/select';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { AnalyticsService } from '../../services/analytics.service';
 
 @Component({
   selector: 'app-projects',
@@ -37,10 +38,14 @@ export class ProjectsComponent {
   typeControl = new FormControl('');
   filter: any = { page: 0, pageSize: 6 };
   filterProjectsLength!:number;
+    analyticsService = inject(AnalyticsService);
   ngOnInit() {
     this.route.queryParamMap.subscribe((result: any) => {
       let id = result.params.id;
       if (id) {
+        if(window.location.href.includes("/getcode")){
+          this.analyticsService.trackEvent("FromGetCodeLink",id)
+        }
         this.router.navigateByUrl('/project/' + id);
       }
     });
