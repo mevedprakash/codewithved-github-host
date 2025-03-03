@@ -32,12 +32,16 @@
     <h4 class="font-lg text-black">{{ project.name }}</h4>
     <div class="flex gap-1 flex-wrap my-1">
       @for (item of project.techStack; track $index) {
-        <span class="bg-gray-600 text-white text-xs  px-2 py-1 shadow rounded-lg">{{item}}</span>
+      <span
+        class="bg-gray-600 text-white text-xs px-2 py-1 shadow rounded-lg"
+        >{{ item }}</span
+      >
       }
     </div>
   </mat-card-content>
   @if(showAction){
   <mat-card-actions class="flex justify-center gap-4">
+    @if(project.downloadCodeUrl || project.gitCodeUrl){
     <a
       class="px-4 py-2 bg-blue-600 text-white rounded shadow-sm"
       [href]="project.downloadCodeUrl || project.gitCodeUrl"
@@ -45,9 +49,20 @@
       (click)="onDownload()"
       >Download Code</a
     >
+    }@else {
+    <button
+      class="px-4 py-2 bg-gray-400 text-white rounded shadow-sm"
+      (click)="onDownload()"
+    >
+      Download Code
+    </button>
+    }
     <a
       class="px-4 py-2 bg-red-600 text-white rounded shadow-sm"
-      [href]="'https://youtu.be/' + project.youtubeVideoId"
+      [href]="
+        project.youtubePlayListUrl ||
+        'https://youtu.be/' + project.youtubeVideoId
+      "
       target="_blank"
       (click)="onWatch()"
       >Watch Video</a

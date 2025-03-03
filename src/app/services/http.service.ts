@@ -6,6 +6,7 @@ export interface Project {
   id?: string;
   name: string;
   youtubeVideoId: string;
+  youtubePlayListUrl?: string;
   downloadCodeUrl: string;
   rank: number;
   gitCodeUrl: string;
@@ -28,7 +29,7 @@ export class HttpService {
       console.error('Duplicate project id');
       return;
     }
-    this.projects = projectsData;
+    this.projects = projectsData.sort((a, b) => a.rank - b.rank);
   }
 
   getProjects() {

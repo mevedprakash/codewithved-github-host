@@ -88,5 +88,15 @@
     "rank": 3,
     "gitCodeUrl": "https://github.com/mevedprakash/netflix-clone-ng",
     "techStack": ["Angular", "JSON Server"]
+  },
+  {
+    "id": "aa011",
+    "name": "Employee Management System Project using Angular & Dot Net Core Api",
+    "youtubeVideoId": "IeQq7NkIcOk",
+    "youtubePlayListUrl": "https://www.youtube.com/playlist?list=PL1fhe5A01vQHb17QB8syjSWq3pmKL4sr3",
+    "downloadCodeUrl": "",
+    "rank": 1,
+    "gitCodeUrl": "",
+    "techStack": ["Angular", "Dot Net Core", "SQL Server", "Angular Material"]
   }
 ]

@@ -6,8 +6,15 @@ declare var gtag: any;
 export class AnalyticsService {
   constructor() {}
   trackEvent(eventName: string, value: string) {
-    gtag('event', eventName, {
-      value: value,
-    });
+    try {
+      if (!gtag) {
+        return;
+      }
+      gtag('event', eventName, {
+        value: value,
+      });
+    } catch (e) {
+      console.log(e);
+    }
   }
 }
