@@ -67,6 +67,7 @@
     "name": "Create Angular Image Slider from Scratch",
     "youtubeVideoId": "Mt6Bs85iIH4",
     "downloadCodeUrl": "",
+    "isFree":true,
     "rank": 3,
     "gitCodeUrl": "https://github.com/mevedprakash/image-slider",
     "techStack": ["Angular", "TailwindCSS"]
@@ -76,6 +77,7 @@
     "name": "Angular Project from scratch : Quiz App",
     "youtubeVideoId": "xlxkfYtx3D4",
     "downloadCodeUrl": "",
+    "isFree":true,
     "rank": 3,
     "gitCodeUrl": "https://github.com/mevedprakash/quiz-app",
     "techStack": ["Angular", "JSON Server"]
@@ -85,6 +87,7 @@
     "name": "Netflix clone using Angular | Netflix app project in Angular",
     "youtubeVideoId": "OqBQ2F-SXRU",
     "downloadCodeUrl": "",
+    "isFree":true,
     "rank": 3,
     "gitCodeUrl": "https://github.com/mevedprakash/netflix-clone-ng",
     "techStack": ["Angular", "JSON Server"]

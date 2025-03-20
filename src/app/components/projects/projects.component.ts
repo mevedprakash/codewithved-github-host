@@ -90,8 +90,8 @@ export class ProjectsComponent {
     if (this.filter.type) {
       filtered = filtered.filter(
         (x) =>
-          (this.filter.type == 'paid' && x.downloadCodeUrl) ||
-          (this.filter.type == 'free' && !x.downloadCodeUrl)
+          (this.filter.type == 'paid' && !x.isFree) ||
+          (this.filter.type == 'free' && x.isFree)
       );
     }
     this.filterProjectsLength= filtered.length;
